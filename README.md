@@ -63,3 +63,17 @@ python main.py
 - The script scrapes the URL and extracts the headlines.
 - It stores the headlines in `data.txt`.
 - If new headlines are found (not present in the `data.txt` file), it triggers the `send_mail()` function.
+
+## Future Improvements
+- Implement email sending functionality using `smtplib` or a service like `SendGrid`.
+- Enhance error handling for cases like connection failures or incorrect CSS selectors.
+- Expand the YAML configuration to extract more complex elements from the page.
+```bash
+
+### Additional Notes
+1. The `extract.yaml` file is critical for defining the elements to extract. Ensure you have created this file with the correct configuration before running the script.
+2. The `send_mail()` function currently only prints "email sent". You can replace it with actual email sending code, such as using `smtplib` or an external email service provider API.
+
+If you need help implementing the email functionality or want to make additional enhancements, feel free to ask!
+```
+
