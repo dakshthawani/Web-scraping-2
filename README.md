@@ -25,7 +25,7 @@ pip install requests selectorlib
 ```
 
 ## Project Structure
-.
+
 ├── extract.yaml     # YAML file defining the structure of elements to be extracted
 
 ├── main.py          # The main script for scraping, extracting, and storing data
@@ -38,3 +38,13 @@ pip install requests selectorlib
 1. Clone this repository or download the script files.
 2. Ensure you have the required dependencies installed (see [Requirements](#requirements)).
 3. Create an extract.yaml file in the same directory with the following contents:
+```bash
+headlines:
+    css: 'h1, h2, h3, h4, h5, h6'
+    multiple: true
+```
+4. Run the script:
+```bash
+python main.py
+```
+5. Check the data.txt file to see the extracted headlines.
