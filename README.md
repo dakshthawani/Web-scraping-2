@@ -33,5 +33,5 @@ pip install requests selectorlib
 
 ## Usage
 1. Clone this repository or download the script files.
-2. Ensure you have the required dependencies installed (see Requirements(#requirements)).
+2. Ensure you have the required dependencies installed (see [Requirements](#requirements)).
 3. Create an extract.yaml file in the same directory with the following contents:
