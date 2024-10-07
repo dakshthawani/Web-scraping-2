@@ -27,8 +27,11 @@ pip install requests selectorlib
 ## Project Structure
 .
 ├── extract.yaml     # YAML file defining the structure of elements to be extracted
+
 ├── main.py          # The main script for scraping, extracting, and storing data
+
 ├── data.txt         # Stores the extracted headlines
+
 ├── README.md        # This README file
 
 ## Usage
