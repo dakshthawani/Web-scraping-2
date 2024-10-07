@@ -47,4 +47,19 @@ headlines:
 ```bash
 python main.py
 ```
-5. Check the 'data.txt' file to see the extracted headlines.
+5. Check the `data.txt` file to see the extracted headlines.
+
+## How It Works
+1. `scrape(url)`: This function sends an HTTP GET request to the specified `url` and retrieves the page's HTML content.
+
+2. `extract(source)`: Using `selectorlib` and the `extract.yaml` file, this function extracts the headlines (using the CSS selectors defined in `extract.yaml`).
+
+3. `store(extracted)`: Writes the extracted headlines to `data.txt`, each headline on a new line.
+
+4. `send_mail()`: Placeholder function for sending an email when new headlines are found.
+
+5. Main Program:
+
+- The script scrapes the URL and extracts the headlines.
+- It stores the headlines in `data.txt`.
+- If new headlines are found (not present in the `data.txt` file), it triggers the `send_mail()` function.
