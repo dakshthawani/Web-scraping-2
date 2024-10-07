@@ -47,4 +47,4 @@ headlines:
 ```bash
 python main.py
 ```
-5. Check the data.txt file to see the extracted headlines.
+5. Check the 'data.txt' file to see the extracted headlines.
